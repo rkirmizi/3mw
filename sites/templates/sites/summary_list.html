@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Summary List{% endblock %}
+{% block content %}
+    <h1>Summary</h1>
+    <a href="{% url 'summary-sum' %}">
+        <button type="button" class="btn btn-primary active">Sum</button>
+    </a>
+    <a href="{% url 'summary-average' %}">
+        <button type="button" class="btn btn-primary">Average</button>
+    </a>
+    <table class="table">
+        <thead>
+        <tr>
+            <td><strong>Site</strong></td>
+            <td><strong>A Value</strong></td>
+            <td><strong>B Value</strong></td>
+        </tr>
+        </thead>
+        {% for object in object_list %}
+            <tr>
+                <td>{{ object.name }}</td>
+                <td>{{ object.a_sum|floatformat:2 }}</td>
+                <td>{{ object.b_sum|floatformat:2 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

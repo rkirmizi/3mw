@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Site Details - {{ object.name }}</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td><strong>Date</strong></td>
+                <td><strong>A Value</strong></td><td><strong>B Value</strong></td>
+            </tr>
+            </thead>
+                {% for detail in object.sitedetail_set.all %}
+                <tr>
+                    <td>{{ detail.date }}</td>
+                    <td>{{ detail.a }}</td>
+                    <td>{{ detail.b }}</td>
+                </tr>
+                    {% empty %}
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                {% endfor %}
+        </table>
+{% endblock %}
