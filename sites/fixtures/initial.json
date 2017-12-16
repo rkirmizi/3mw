@@ -1,0 +1,73 @@
+[
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "name": "X Site"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+        "name": "Y Site"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+        "name": "Z Site"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 1,
+    "fields": {
+        "site": 1,
+        "date": "2017-12-15",
+        "a": "4",
+        "b": "5"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 2,
+    "fields": {
+        "site": 1,
+        "date": "2017-12-15",
+        "a": "6",
+        "b": "9"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 3,
+    "fields": {
+        "site": 1,
+        "date": "2017-12-15",
+        "a": "12",
+        "b": "3"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 4,
+    "fields": {
+        "site": 2,
+        "date": "2017-12-15",
+        "a": "4",
+        "b": "66"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 5,
+    "fields": {
+        "site": 2,
+        "date": "2017-12-15",
+        "a": "6",
+        "b": "4"
+    }
+}
+]
